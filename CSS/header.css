@@ -123,7 +123,7 @@
     position: static;
     width: auto;
     background: none;
-    padding-left: 371px;
+    padding-left: 101px;
     align-items: center;
     gap: 2rem;
   }
@@ -151,12 +151,10 @@
   .menu a {
     display: flex;
     justify-content: space-between;
-    padding: 16px 12px;
+    padding: 16px 1px;
     text-decoration: none;
     color: #ff2277;
     font-size: 18px;
-    font-family: "Lunasima";
-    font-weight: 700;
   }
 
   /* Dropdown */
@@ -167,7 +165,7 @@
     left: 0;
     background: #70ae97;
     padding: 15px 0 15px 15px;
-    min-width: 260px;
+    min-width: 245px;
     list-style: none;
     margin-top: 8px;
   }

@@ -12,7 +12,7 @@ body {
 }
 @font-face {
   font-family: "Lunasima";
-  src: url("../font/Lunasima/Lunasima-.ttf");
+  src: url("../font/Lunasima/Lunasima-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
@@ -29,8 +29,8 @@ body {
 .menu li,
 .menu ul {
   font-family: "Lunasima";
-  font-weight: 700;
-  font-size: 25px;
+
+  font-size: 20px;
 }
 footer a {
   text-decoration: none;
