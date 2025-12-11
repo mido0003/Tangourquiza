@@ -1,0 +1,132 @@
+/* Footer: centered, responsive layout */
+footer {
+  background-color: #038377;
+  color: #fcfaf0;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-top: 34px solid #4ba9a2;
+}
+
+/* Top block: logo SVG + quote */
+.svg-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+.svg-1 svg {
+  max-width: 120px;
+  width: 60%;
+  height: auto;
+  display: block;
+}
+.svg-1 p {
+  margin: 0;
+  color: #fcfaf0;
+  font-style: italic;
+}
+
+/* Footer content sections (contact, newsletter, social) */
+footer > section,
+footer > .svg-2 {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Contact list */
+footer ol,
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+}
+
+footer section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Specific column styles */
+.footer-kontakt {
+  margin-bottom: 0.25rem;
+}
+.blod {
+  font-weight: 700;
+}
+
+/* Newsletter */
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+.newsletter-input {
+  width: 70%;
+
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
+}
+.newsletter-input::placeholder {
+  color: #6b6b6b;
+}
+
+/* Social / small svg */
+.svg-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-2 svg {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+}
+
+/* Small screens: stack and center content */
+@media (max-width: 799px) {
+  footer section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .kontakt {
+    align-items: center;
+  }
+}
+
+/* Desktop: layout in columns */
+@media (min-width: 800px) {
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5rem 4rem;
+    padding-right: 2rem;
+  }
+
+  .kontakt {
+    padding-right: 4rem;
+  }
+  .svg-2 svg {
+    flex: 0 0 200px;
+
+    padding-right: 4rem;
+  }
+  .footer-alt {
+    flex: 0 0 270px;
+  }
+
+  .footer-kontakt {
+    padding-left: 2.6rem;
+  }
+}

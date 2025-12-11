@@ -1,0 +1,205 @@
+/* HEADER (MOBIL FIRST)*/
+/* Ensure dropdowns are hidden by default (global, mobile-first) */
+.dropdown {
+  display: none;
+}
+@media (max-width: 770px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #038377;
+    padding: 16px 20px;
+    position: relative;
+  }
+
+  /* Logo */
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  /* Burger */
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    align-items: end;
+  }
+
+  .burger span {
+    width: 27px;
+    height: 3px;
+    background: #ff0062;
+  }
+  .burger span:nth-child(2) {
+    width: 19px;
+    height: 3px;
+    background: #ff0062;
+  }
+
+  /* Menu */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 93%;
+    background: #70ae97;
+    padding-left: 28px;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    border-bottom: 1px solid #000000;
+  }
+
+  /* Links */
+  .menu a {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 16px 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Lunasima";
+    font-weight: 700;
+  }
+  /* Dropdown */
+  .dropdown {
+    display: none;
+    padding-left: 15px;
+  }
+
+  .has-dropdown.open .dropdown {
+    display: block;
+  }
+
+  .dropdown li {
+    border: none;
+  }
+
+  .dropdown a {
+    font-size: 15px;
+    padding: 12px 0;
+  }
+
+  /* Dropdown arrow indicator for items with submenu */
+  .has-dropdown > a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .has-dropdown > a::after {
+    content: "\25BC"; /* downwards triangle ▼ */
+    margin-left: 0.8rem;
+  }
+
+  .has-dropdown.open > a::after {
+    content: "\25B2"; /* upwards triangle ▲ */
+  }
+}
+@media (min-width: 770px) {
+  /* HEADER (Desk)*/
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid #038377;
+    padding: 45px 2px;
+    position: relative;
+  }
+  .menu {
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+    padding-left: 371px;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* Logo */
+  .logo {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  /* Menu */
+  .menu > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu li {
+    border-bottom: none;
+    position: relative;
+  }
+
+  /* Links */
+  .menu a {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 12px;
+    text-decoration: none;
+    color: #ff2277;
+    font-size: 18px;
+    font-family: "Lunasima";
+    font-weight: 700;
+  }
+
+  /* Dropdown */
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #70ae97;
+    padding: 15px 0 15px 15px;
+    min-width: 260px;
+    list-style: none;
+    margin-top: 8px;
+  }
+
+  .has-dropdown.open .dropdown {
+    display: block;
+  }
+
+  .dropdown li {
+    border: none;
+  }
+
+  .dropdown a {
+    display: block;
+    font-size: 19px;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  /* Dropdown arrow indicator for items with submenu */
+  .has-dropdown > a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .has-dropdown > a::after {
+    content: "\25BC"; /* downwards triangle ▼ */
+    margin-left: 0.8rem;
+  }
+
+  .has-dropdown.open > a::after {
+    content: "\25B2"; /* upwards triangle ▲ */
+  }
+}
