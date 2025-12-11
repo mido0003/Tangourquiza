@@ -6,8 +6,10 @@ body {
   margin: 0;
   padding: 0;
 }
-img {
-  width: 436px;
-  height: 334px;
-  border-radius: 30px;
+@media (max-width: 770px) {
+  img {
+    width: 436px;
+    height: 334px;
+    border-radius: 30px;
+  }
 }
