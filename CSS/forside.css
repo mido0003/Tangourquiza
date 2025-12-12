@@ -84,4 +84,104 @@
 }
 
 @media (min-width: 770px) {
+  /*hero*/
+  .h1line {
+    height: 2px;
+    background-color: #038377;
+  }
+  /**/
+  img {
+    width: 536px;
+    height: 434px;
+    border-radius: 30px;
+  }
+  .svg-noder {
+    width: 150px;
+  }
+
+  /* den grøne line*/
+
+  /*1 grid 1*/
+  .h1-tango {
+    display: grid;
+    grid-template-rows: 130px 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 53.5px;
+  }
+  h1 {
+    grid-row: 1/2;
+    grid-column: 1;
+    justify-self: center;
+  }
+  .p-tango {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .p-tango-desk {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .h2-svg {
+    display: grid;
+  }
+
+  /*svg 1*/
+  .svg1 {
+    width: 314%;
+    height: 314%;
+  }
+
+  .Teachingclass2 {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  /*1 grid 2*/
+  .h2-tango {
+    display: grid;
+    grid-template-rows: 54px 104px 147px 1fr 84px;
+    grid-template-columns: 610px 1fr 39px;
+    margin: 53.5px;
+  }
+  .h2-svg,
+  h2 {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+  }
+  .h2-desk {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+  }
+  button {
+    grid-row: 4;
+    grid-column: 2;
+    justify-self: center;
+  }
+  .Teachingclass3 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .Teachingclass1 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  main {
+    margin-bottom: 100px;
+  }
+  /*SVG*/
+  .svg-1 {
+    width: 50%;
+    grid-row: 4;
+    grid-column: 1;
+    justify-self: center;
+  }
+  .svg-2-forside {
+    width: 23%;
+    padding-top: 1rem;
+  }
 }
