@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+  justify-content: center;
+}
+.roseimg {
+  max-width: 168px;
+  display: block;
+  margin: auto;
+}
+.img {
+  max-inline-size: 100%;
+}
+.img-t1 {
+  object-fit: cover;
+  max-width: 350px;
+  display: flex;
+  margin: auto;
+}
+.img1 {
+  object-fit: cover;
+  max-width: 255px;
+  max-inline-size: 100%;
+  display: flex;
+  margin: auto;
+  border-radius: 30px;
+}
+main {
+  /* margin: 0px, 53px; */
+  max-width: 300px;
+  margin: 0 auto;
+}
