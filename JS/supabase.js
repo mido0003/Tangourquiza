@@ -15,6 +15,7 @@ const options = {
     apikey: key,
   },
 };
+
 // Funktion til at hente produkter
 function fetchCategories(categories, specificCategory = null) {
   if (specificCategory) {
