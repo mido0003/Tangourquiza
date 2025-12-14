@@ -1,0 +1,284 @@
+@media (max-width: 770px) {
+  .oversigt {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 39px 1fr 39px;
+    margin: 53.5px;
+  }
+  #tilmeld p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h1 {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+  }
+  #tilmeld {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+  }
+  #dkk {
+    padding-left: 2rem;
+  }
+  .sko {
+    width: 150px;
+    height: auto;
+    margin-left: 15px;
+  }
+  .sko2 {
+    margin-left: 42px;
+  }
+  .kun-desktop {
+    display: none;
+  }
+  h3 {
+    height: 70px;
+    width: 270px;
+    background-color: #8cb0c3;
+    color: #402f32;
+    text-align: center;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    font-family: "lunasima";
+    grid-column: 2;
+    justify-self: center;
+  }
+  .tirsdag {
+    display: grid;
+    grid-template-rows: 67px 166px 166px 218px;
+    grid-template-columns: 86px 1fr 86px;
+    gap: 10px;
+  }
+  .ondsag {
+    display: grid;
+    grid-template-rows: 67px 166px 166px 44px;
+    grid-template-columns: 86px 1fr 86px;
+    gap: 10px;
+  }
+  button {
+    background-color: transparent;
+  }
+  button,
+  a {
+    border: none;
+    outline: none;
+    color: #ffffff;
+  }
+  .tirsdag-1,
+  .tirsdag-2,
+  .tirsdag-3,
+  .onsdag-1,
+  .onsdag-2,
+  .onsdag-3,
+  .torsdag-1,
+  .torsdag-2 {
+    border-radius: 10px;
+    color: #ffffff;
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    width: 270px;
+    height: 173px;
+  }
+  .tirsdag-1 {
+    background-color: #c77171;
+  }
+  .tirsdag-2 {
+    background-color: #71899c;
+  }
+  .tirsdag-3 {
+    background-color: #a88571;
+  }
+
+  .onsdag-1 {
+    background-color: #8cb0c3;
+  }
+
+  .onsdag-2 {
+    background-color: #a88571;
+  }
+  .torsdag-1 {
+    background-color: #7ea496;
+  }
+  .torsdag-2 {
+    background-color: #db9191;
+  }
+
+  .privat {
+    display: flex;
+    justify-content: center;
+  }
+  .privat p {
+    margin-right: 10px;
+  }
+  .klik {
+    color: #402f32;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 117px;
+  }
+}
+@media (min-width: 770px) {
+  .oversigt {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 39px 1fr 39px;
+    margin: 53.5px;
+  }
+  #tilmeld p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h1 {
+    margin-top: 40px;
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+  }
+  #tilmeld {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .sko {
+    width: 271px;
+    height: auto;
+    margin-left: 15px;
+  }
+  .sko2 {
+    margin-left: 374px;
+  }
+  h3 {
+    height: 66px;
+    width: 216px;
+    background-color: rgba(140, 176, 195, 0.38);
+    color: #402f32;
+    text-align: center;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    grid-column: 2;
+    justify-self: center;
+  }
+  .tirsdag,
+  .torsdag {
+    display: grid;
+    grid-template-rows: 67px 166px 166px 218px;
+    grid-template-columns: 86px 251px;
+    gap: 10px;
+  }
+
+  .ondsag {
+    display: grid;
+    grid-template-rows: 67px 166px 166px;
+
+    gap: 10px;
+  }
+  .torsdag {
+    display: grid;
+    grid-template-rows: 67px 166px 166px 218px;
+    grid-template-columns: 82px 9px;
+    gap: 10px;
+  }
+  .holdover {
+    display: grid;
+
+    grid-template-columns: 213px 277px 294px 315px 213px;
+    margin-bottom: 117px;
+    margin-bottom: 117px;
+    justify-content: center;
+  }
+  .mandag {
+    grid-column: 1;
+    margin-left: 13rem;
+    display: grid;
+  }
+  .fredag {
+    grid-column: 5;
+    margin-right: 13rem;
+    display: grid;
+  }
+  button {
+    background-color: transparent;
+  }
+  button,
+  a {
+    border: none;
+    outline: none;
+    color: #ffffff;
+  }
+  .tirsdag-1,
+  .tirsdag-2,
+  .tirsdag-3,
+  .onsdag-1,
+  .onsdag-2,
+  .onsdag-3,
+  .torsdag-1,
+  .torsdag-2 {
+    border-radius: 10px;
+    color: #ffffff;
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    width: 270px;
+    width: 216px;
+  }
+  .tirsdag-1 {
+    background-color: #c77171;
+  }
+  .tirsdag-2 {
+    background-color: #71899c;
+  }
+  .tirsdag-3 {
+    background-color: #a88571;
+  }
+
+  .onsdag-1 {
+    background-color: #8cb0c3;
+  }
+
+  .onsdag-2 {
+    background-color: #a88571;
+  }
+  .torsdag-1 {
+    background-color: #7ea496;
+  }
+  .torsdag-2 {
+    background-color: #db9191;
+  }
+
+  .privat {
+    display: flex;
+    justify-content: center;
+  }
+  .privat p {
+    margin-right: 10px;
+  }
+  .klik {
+    color: #402f32;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 117px;
+  }
+}
