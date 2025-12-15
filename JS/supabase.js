@@ -17,9 +17,17 @@ fetch(url, options)
 
 function show(data) {
   console.log(data);
-  let markup = "";
   data.forEach((hold) => {
-    markup += `<article><h3>${hold.undervisere}</h3></article>`;
+    const markup = `
+          <article>
+            <p><strong></strong><span>${hold.start}</span><span>${hold.end}</span></p>
+            <p><strong>${hold.holdnavn}</strong></p>
+            <p><strong>${hold.niveau}</strong></p>
+            <p><strong>${hold.undervisere}</strong></p>
+            <button>
+              <a href="#"><i class="mere"></i>Læs mere</a>
+            </button>
+          </article>`;
+    document.querySelector(`.${hold.day}`).innerHTML += markup;
   });
-  liste.innerHTML = markup;
 }
