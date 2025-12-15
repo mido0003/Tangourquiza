@@ -1,57 +1,76 @@
- 
 /* Mobil størrelse*/
 @media (max-width: 770px) {
- .tilmeldbutton {
+  .tilmeldbutton {
     grid-row: 3;
     grid-column: 2;
     justify-self: center;
     margin-left: 150px;
     margin-bottom: 120px;
-    color:#FCFAF0;
+    color: #fcfaf0;
     font-weight: bold;
   }
+  @media (max-width: 770px) {
+    .dansende-grafik {
+      width: 100%;
+      height: 145px;
+      background-image: url("../svg/Tangodancefooter.svg");
+      background-repeat: no-repeat;
+      background-size: 99px;
+      background-position: 0 0;
+      animation-name: moving;
+      animation-duration: 25s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      margin-top: 140px;
+    }
 
+    @keyframes moving {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
+    }
+  }
   h1 {
     margin-top: 45px;
     margin-bottom: 10px;
     font-style: normal;
     text-align: center;
-    ;
   }
-  
+
   h2 {
     margin-bottom: 45px;
     font-style: normal;
     text-align: center;
- 
   }
 
   p {
-    color: #001A18;
+    color: #001a18;
     margin-left: 53px;
     margin-right: 53px;
-    margin-bottom: 1.5rem; /* luft under hvert afsnit */ 
-   }
+    margin-bottom: 1.5rem; /* luft under hvert afsnit */
+  }
 
   .lastlineptext {
-    color: #001A18;
+    color: #001a18;
     margin-bottom: 30px;
   }
 
   .accordiongreen {
-  width: 100px;   
-  height: auto;   /* bevarer proportioner */
-  margin-left: 160px;
-}
+    width: 100px;
+    height: auto; /* bevarer proportioner */
+    margin-left: 160px;
+  }
 
   .tangodansere {
-  width: 70px; /* Gør billedet mindre, prøv forskellige værdier */
-  border-radius: none;
-  margin-left: 350px;
-}
+    width: 70px; /* Gør billedet mindre, prøv forskellige værdier */
+    border-radius: none;
+    margin-left: 350px;
+  }
 
-
-/* img {
+  /* img {
   width: 300px;   
   height: auto;   /* bevarer proportioner */
   /* margin-left: 53px;
@@ -59,55 +78,51 @@
   margin-bottom: 50px;
 } */
 
+  .imgmilonga {
+    width: 300px;
+    height: auto; /* bevarer proportioner */
+    margin-left: 53px;
+    margin-right: 53px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+  }
 
-.imgmilonga {
-  width: 300px;   
-  height: auto;   /* bevarer proportioner */
-  margin-left: 53px;
-  margin-right: 53px;
-  margin-bottom: 50px;
-  border-radius: 30px;
-}
+  .playmusic {
+    width: 100px;
+    height: auto; /* bevarer proportioner */
+    margin-left: 160px;
+    margin-bottom: 50px;
+  }
 
-.playmusic {
-  width: 100px;   
-  height: auto;   /* bevarer proportioner */
-  margin-left: 160px;
-  margin-bottom: 50px;
-}
+  .teaching-wrapper {
+    position: relative; /* VIGTIGT */
+    width: fit-content; /* passer til billedet */
+  }
 
-.teaching-wrapper {
-  position: relative;   /* VIGTIGT */
-  width: fit-content;   /* passer til billedet */
-}
+  .imgteaching1 {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: 53px;
+    margin-right: 53px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+  }
 
-.imgteaching1 {
-  display: block;
-  width: 300px;
-  height: auto;
-  margin-left: 53px;
-  margin-right: 53px;
-  margin-bottom: 50px;
-  border-radius: 30px;
-}
+  .noder {
+    position: absolute;
+    top: 60%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    width: 120px; /* justér størrelse */
+    z-index: 2; /* sikrer at den ligger ovenpå */
+  }
 
-.noder {
-  position: absolute;
-  top: 60%;
-  left: 73%;
-  transform: translate(-50%, -50%);
-  width: 120px;       /* justér størrelse */
-  z-index: 2;         /* sikrer at den ligger ovenpå */
-
-}
-
-
-/* Desk størrelse */
+  /* Desk størrelse */
 }
 @media (min-width: 770px) {
-
   .Grid-2-columns-3-rows {
-    display: grid; 
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     max-width: 1195px;
@@ -116,101 +131,119 @@
     gap: 10px;
     place-items: center;
   }
-  .nyhedsbrev{
+  .nyhedsbrev {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     max-width: 1195px;
     margin: auto;
-    
   }
-  .nyhedsbrev-text{
-   grid-column: 1;
-   grid-row: 1;
-  
+  .nyhedsbrev-text {
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .teaching-wrapper {
-  position: relative;   /* VIGTIGT */
-  width: fit-content;   /* passer til billedet */
-}
+    position: relative; /* VIGTIGT */
+    width: fit-content; /* passer til billedet */
+  }
 
- .tilmeldbutton {
+  .tilmeldbutton {
     grid-row: 3;
     grid-column: 1;
     justify-self: start;
     margin-left: 200px;
     margin-bottom: 120px;
-    color:#FCFAF0;
+    color: #fcfaf0;
     font-weight: bold;
   }
 
+  .imgteaching1 {
+    display: block;
+    width: 500px;
+    height: auto;
+    margin-left: 53px;
+    margin-right: 53px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+  }
 
-.imgteaching1 {
-  display: block;
-  width: 500px;
-  height: auto;
-  margin-left: 53px;
-  margin-right: 53px;
-  margin-bottom: 50px;
-  border-radius: 30px;
-}
-
-.noder {
-  width: 250px;
-  position: absolute;
-  top: 180px;
-  left: 310px;
-  z-index: 10; /* sørger for at noderne ligger ovenpå */
-}
+  .noder {
+    width: 250px;
+    position: absolute;
+    top: 180px;
+    left: 310px;
+    z-index: 10; /* sørger for at noderne ligger ovenpå */
+  }
   .accordiongreen {
-  width:200px;   
-  height: auto;   /* bevarer proportioner */
-  margin-left: 150px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-} 
+    width: 200px;
+    height: auto; /* bevarer proportioner */
+    margin-left: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 
-h1 {
-  margin-left: 70px;
-}
-h2 {
+  h1 {
+    margin-left: 70px;
+  }
+  h2 {
     margin-bottom: 45px;
     font-style: normal;
     text-align: center;
   }
-.playmusic {
-  width: 300px;   
-  height: auto;   /* bevarer proportioner */
-  /* margin-left: 155px;
+  .playmusic {
+    width: 300px;
+    height: auto; /* bevarer proportioner */
+    /* margin-left: 155px;
   margin-bottom: 50px; */
-}
+  }
 
-.tangodansere {
-  width: 90px; /* Gør billedet mindre, prøv forskellige værdier */
-  border-radius: none;
-  margin-left: 1100px;
-}
+  .tangodansere {
+    width: 90px; /* Gør billedet mindre, prøv forskellige værdier */
+    border-radius: none;
+    margin-left: 1100px;
+  }
 
   p {
-    color: #001A18;
-  
+    color: #001a18;
+
     margin-left: 53px;
     margin-right: 53px;
-    margin-bottom: 1.5rem; /* luft under hvert afsnit */ 
-   }
+    margin-bottom: 1.5rem; /* luft under hvert afsnit */
+  }
 
   .lastlineptext {
-    color: #001A18;
-   ;
+    color: #001a18;
     margin-bottom: 70px;
   }
 
   .imgmilonga {
-  width: 500px;   
-  height: auto;   /* bevarer proportioner */
-  margin-left: 53px;
-  margin-right: 53px;
-  margin-bottom: 50px;
-  border-radius: 30px;
-}
+    width: 500px;
+    height: auto; /* bevarer proportioner */
+    margin-left: 53px;
+    margin-right: 53px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+  }
+  .dansende-grafik {
+    width: 100%;
+    height: 145px;
+    background-image: url("../svg/Tangodancefooter.svg");
+    background-repeat: no-repeat;
+    background-size: 99px;
+    background-position: 0 0;
+    animation-name: moving;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 238px;
+  }
+
+  @keyframes moving {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
 }
