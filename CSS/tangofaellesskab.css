@@ -104,40 +104,6 @@
 
 }
 }
-
-/* Desk top */
-@media (min-width: 770px) { 
-
-H1 {
-    margin-top: 45px;
-    margin-bottom: 10px;
-    color: #038377;
-    font-family:"playfair";
-    font-style: normal;
-    font-size: 48px;
-    margin-left: 70px;
-  }
+@media (min-width: 770px) {
   
-  h2 {
-    margin-bottom: 45px;
-    color: #038377;
-    font-family:"playfair";
-    font-style: normal;
-    text-align: center;
-    font-size: 36px;
-  }
-
-  p {
-    color: #001A18;
-    font-family: "Lunasima";
-    margin-left: 53px;
-    margin-right: 53px;
-    margin-bottom: 1.5rem; /* luft under hvert afsnit */ 
-    font-size: 20px;}
-
-  .accordiongreen {
-  width: 200px;   
-  height: auto;   /* bevarer proportioner */
-  margin-left: 160px;
-}
 }
