@@ -1,5 +1,5 @@
  
-/* Mobil */
+/* Mobil størrelse*/
 @media (max-width: 770px) {
  .tilmeldbutton {
     grid-row: 3;
@@ -14,8 +14,6 @@
   h1 {
     margin-top: 45px;
     margin-bottom: 10px;
-  ;
-   
     font-style: normal;
     text-align: center;
     ;
@@ -23,7 +21,6 @@
   
   h2 {
     margin-bottom: 45px;
-   
     font-style: normal;
     text-align: center;
  
@@ -31,7 +28,6 @@
 
   p {
     color: #001A18;
-  
     margin-left: 53px;
     margin-right: 53px;
     margin-bottom: 1.5rem; /* luft under hvert afsnit */ 
@@ -39,7 +35,6 @@
 
   .lastlineptext {
     color: #001A18;
-   ;
     margin-bottom: 30px;
   }
 
@@ -71,6 +66,7 @@
   margin-left: 53px;
   margin-right: 53px;
   margin-bottom: 50px;
+  border-radius: 30px;
 }
 
 .playmusic {
@@ -92,6 +88,7 @@
   margin-left: 53px;
   margin-right: 53px;
   margin-bottom: 50px;
+  border-radius: 30px;
 }
 
 .noder {
@@ -103,7 +100,117 @@
   z-index: 2;         /* sikrer at den ligger ovenpå */
 
 }
+
+
+/* Desk størrelse */
 }
 @media (min-width: 770px) {
+
+  .Grid-2-columns-3-rows {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    max-width: 1195px;
+    margin: auto;
+    margin-top: 157px;
+    gap: 10px;
+    place-items: center;
+  }
+  .nyhedsbrev{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-width: 1195px;
+    margin: auto;
+    
+  }
+  .nyhedsbrev-text{
+   grid-column: 1;
+   grid-row: 1;
   
+  }
+
+  .teaching-wrapper {
+  position: relative;   /* VIGTIGT */
+  width: fit-content;   /* passer til billedet */
+}
+
+ .tilmeldbutton {
+    grid-row: 3;
+    grid-column: 1;
+    justify-self: start;
+    margin-left: 200px;
+    margin-bottom: 120px;
+    color:#FCFAF0;
+    font-weight: bold;
+  }
+
+
+.imgteaching1 {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin-left: 53px;
+  margin-right: 53px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+
+.noder {
+  width: 250px;
+  position: absolute;
+  top: 180px;
+  left: 310px;
+  z-index: 10; /* sørger for at noderne ligger ovenpå */
+}
+  .accordiongreen {
+  width:200px;   
+  height: auto;   /* bevarer proportioner */
+  margin-left: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+} 
+
+h1 {
+  margin-left: 70px;
+}
+h2 {
+    margin-bottom: 45px;
+    font-style: normal;
+    text-align: center;
+  }
+.playmusic {
+  width: 300px;   
+  height: auto;   /* bevarer proportioner */
+  /* margin-left: 155px;
+  margin-bottom: 50px; */
+}
+
+.tangodansere {
+  width: 90px; /* Gør billedet mindre, prøv forskellige værdier */
+  border-radius: none;
+  margin-left: 1100px;
+}
+
+  p {
+    color: #001A18;
+  
+    margin-left: 53px;
+    margin-right: 53px;
+    margin-bottom: 1.5rem; /* luft under hvert afsnit */ 
+   }
+
+  .lastlineptext {
+    color: #001A18;
+   ;
+    margin-bottom: 70px;
+  }
+
+  .imgmilonga {
+  width: 500px;   
+  height: auto;   /* bevarer proportioner */
+  margin-left: 53px;
+  margin-right: 53px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
 }
