@@ -1,5 +1,6 @@
  
- /* Mobil */
+/* Mobil */
+@media (max-width: 770px) {
  .tilmeldbutton {
     grid-row: 3;
     grid-column: 2;
@@ -99,4 +100,5 @@
   width: 120px;       /* justér størrelse */
   z-index: 2;         /* sikrer at den ligger ovenpå */
 
+}
 }
