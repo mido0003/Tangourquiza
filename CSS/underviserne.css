@@ -109,6 +109,10 @@ h3 {
   margin-bottom: 15px;
   text-align: center;
 }
+
+.underviser-navn {
+  font-family: lunasima;
+}
 .cv-list {
   /* margin-top: 10px; */
 
