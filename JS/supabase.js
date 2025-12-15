@@ -1,3 +1,5 @@
+const liste = document.querySelector(".holdover");
+
 const url = "https://yeqstpeyawzmmjmpyajy.supabase.co/rest/v1/holdoversigt?";
 // const url = "https://yeqstpeyawzmmjmpyajy.supabase.co;";
 
@@ -15,4 +17,9 @@ fetch(url, options)
 
 function show(data) {
   console.log(data);
+  let markup = "";
+  data.forEach((hold) => {
+    markup += `<article><h3>${hold.undervisere}</h3></article>`;
+  });
+  liste.innerHTML = markup;
 }
