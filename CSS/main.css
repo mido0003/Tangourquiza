@@ -7,9 +7,4 @@ body {
   padding: 0;
 }
 @media (max-width: 770px) {
-  img {
-    width: 436px;
-    height: 334px;
-    border-radius: 30px;
-  }
 }
