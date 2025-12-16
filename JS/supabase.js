@@ -16,18 +16,37 @@ fetch(url, options)
   .then((data) => show(data));
 
 function show(data) {
-  console.log(data);
+  const days = {};
+
+  const grouped = {};
   data.forEach((hold) => {
-    const markup = `
-          <article>
-            <p><strong></strong><span>${hold.start}</span><span>${hold.end}</span></p>
-            <p><strong>${hold.holdnavn}</strong></p>
-            <p><strong>${hold.niveau}</strong></p>
-            <p><strong>${hold.undervisere}</strong></p>
-            <button>
-              <a href="#"><i class="mere"></i>Læs mere</a>
-            </button>
-          </article>`;
-    document.querySelector(`.${hold.day}`).innerHTML += markup;
+    if (!grouped[hold.day]) grouped[hold.day] = [];
+    grouped[hold.day].push(hold);
+  });
+
+  Object.keys(grouped).forEach((day) => {
+    grouped[day].sort((a, b) => {
+      return a.start.localeCompare(b.start);
+    });
+
+    const section = document.createElement("section");
+    section.classList.add(day);
+    section.classList.add("dag");
+    if (day === "Mandag" || day === "Fredag") section.classList.add("kun-desktop");
+
+    section.innerHTML = `<h3>${day}</h3>`;
+    liste.appendChild(section);
+
+    grouped[day].forEach((hold) => {
+      section.innerHTML += `
+        <article class="hold niveau-${hold.niveau.toLowerCase().replace(/\s+/g, "-")}">
+          <p>${hold.start} – ${hold.end}</p>
+          <p><strong>${hold.holdnavn}</strong></p>
+          <p class="niveau">${hold.niveau}</p>
+          <p>${hold.undervisere}</p>
+          <button><a href="#">Læs mere</a></button>
+        </article>
+      `;
+    });
   });
 }
