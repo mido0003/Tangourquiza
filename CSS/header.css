@@ -2,6 +2,7 @@
 /* Ensure dropdowns are hidden by default (global, mobile-first) */
 .dropdown {
   display: none;
+  border-radius: 5px;
 }
 @media (max-width: 770px) {
   .header {
@@ -79,6 +80,7 @@
   .dropdown {
     display: none;
     padding-left: 15px;
+    border-radius: 5px;
   }
 
   .has-dropdown.open .dropdown {
@@ -117,6 +119,12 @@
     border-bottom: 4px solid #038377;
     padding: 45px 2px;
     position: relative;
+  }
+  .header-img {
+    max-width: 154px;
+    width: 100%;
+    margin-left: 75px;
+    cursor: pointer;
   }
   .menu {
     display: flex;

@@ -17,6 +17,10 @@ h2 {
   .grid1 {
     display: block;
   }
+  .underviser-navn {
+    line-height: 2;
+    font-family: lunasima;
+  }
   .roseimg {
     max-width: 168px;
     display: flex;
@@ -63,7 +67,8 @@ h1 {
   margin-bottom: 45px;
 }
 .underviser-navn {
-  line-height: 2;
+  line-height: 2.5;
+  font-family: lunasima;
 }
 .left {
   display: flex;
@@ -98,7 +103,6 @@ h2 {
 }
 
 ul {
-  list-style: none;
 }
 .CV {
   background-color: #b4d7cd;
@@ -114,6 +118,7 @@ h3 {
 
   font-family: lunasima;
   font-weight: 200;
+  list-style: none;
   /* line-height: 1.4; */
 }
 .small-text p {
