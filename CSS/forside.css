@@ -1,14 +1,26 @@
 @media (max-width: 770px) {
+  .header {
+    position: relative;
+    z-index: 1000; /* 👈 vigtigt */
+  }
+
+  .menu {
+    position: absolute;
+    z-index: 1100; /* 👈 endnu højere */
+  }
+
   /*hero*/
   .hero {
     position: relative;
     width: 80%;
     height: 28vh;
     border: 3px solid #4ba9a2;
+    background-color: #fbf8ef; /* 👈 SAMME som sidens baggrund */
     overflow: hidden;
-    margin-left: 3rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
     border-radius: 10px;
+    position: relative;
+    z-index: 1;
   }
 
   .hero video {
@@ -114,6 +126,14 @@ button {
 }
 
 @media (min-width: 770px) {
+  .header {
+    position: relative;
+    z-index: 1000; /* 👈 vigtigt */
+  }
+
+  .menu {
+    z-index: 1100; /* 👈 endnu højere */
+  }
   /*hero*/
   .hero {
     position: relative;
