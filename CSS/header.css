@@ -11,12 +11,12 @@
     border-bottom: 3px solid #038377;
     padding: 16px 20px;
     position: relative;
-  }
-
-  /* Logo */
-  .logo {
-    font-weight: bold;
-    font-size: 20px;
+  } /* Logo */
+  .header-img {
+    max-width: 89px;
+    width: 100%;
+    margin-left: 4px;
+    cursor: pointer;
   }
 
   /* Burger */
@@ -26,6 +26,7 @@
     gap: 6px;
     cursor: pointer;
     align-items: end;
+    margin-top: 18px;
   }
 
   .burger span {
@@ -120,6 +121,7 @@
     padding: 45px 2px;
     position: relative;
   }
+  /* Logo */
   .header-img {
     max-width: 154px;
     width: 100%;
@@ -134,11 +136,6 @@
     padding-left: 101px;
     align-items: center;
     gap: 2rem;
-  }
-  /* Logo */
-  .logo {
-    font-weight: bold;
-    font-size: 30px;
   }
 
   /* Menu */
@@ -170,7 +167,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background: #70ae97;
     padding: 15px 0 15px 15px;
     min-width: 245px;

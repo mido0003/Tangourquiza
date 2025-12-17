@@ -18,7 +18,7 @@ body {
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    margin-top: 140px;
+    margin-top: 56px;
   }
 
   @keyframes moving {
@@ -44,7 +44,7 @@ body {
     animation-duration: 60s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    margin-top: 238px;
+    margin-top: 80px;
   }
 
   @keyframes moving {
