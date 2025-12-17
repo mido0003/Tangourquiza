@@ -65,9 +65,15 @@ rabat på begivenheder (det inkluderer milongas, workshops, og Tango Noche).</p>
 
                <button class="close-dialog">Køb Månedsbetaling</button>
                <button class="close-dialog"> Køb Drop In </button>
-           </div>
+                
+              
          
+           </div>
+        <a class="read" href="#">Læs købsbetingelserne her</a>
+
            <button class="close-luk">Luk</button> </form>
+           
+        
         </dialog>
       `;
 

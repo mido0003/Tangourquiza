@@ -1,8 +1,33 @@
 @media (max-width: 770px) {
+  .header {
+    position: relative;
+    z-index: 1000; /* 👈 vigtigt */
+  }
+
+  .menu {
+    position: absolute;
+    z-index: 1100; /* 👈 endnu højere */
+  }
+
   /*hero*/
-  .h1line {
-    height: 2px;
-    background-color: #038377;
+  .hero {
+    position: relative;
+    width: 80%;
+    height: 28vh;
+    border: 3px solid #4ba9a2;
+    background-color: #fbf8ef; /* 👈 SAMME som sidens baggrund */
+    overflow: hidden;
+    margin: 1rem auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   /* den grøne line*/
@@ -16,6 +41,7 @@
     grid-template-rows: 84px 199px 268px 1fr;
     grid-template-columns: 39px 1fr 39px;
     margin: 53.5px;
+    margin-top: 4rem;
   }
   .h1 {
     grid-row: 1/2;
@@ -100,11 +126,33 @@ button {
 }
 
 @media (min-width: 770px) {
-  /*hero*/
-  .h1line {
-    height: 2px;
-    background-color: #038377;
+  .header {
+    position: relative;
+    z-index: 1000; /* 👈 vigtigt */
   }
+
+  .menu {
+    z-index: 1100; /* 👈 endnu højere */
+  }
+  /*hero*/
+  .hero {
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    border: 8px solid #4ba9a2;
+    overflow: hidden;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+  }
+
+  .hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   /**/
 
   .svg-noder {
