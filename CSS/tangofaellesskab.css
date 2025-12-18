@@ -180,12 +180,15 @@
     margin-left: 1100px;
   }
 
-  p {
+  /* p {
     color: #001a18;
 
     margin-left: 53px;
     margin-right: 53px;
     margin-bottom: 1.5rem; /* luft under hvert afsnit */
+  /* } */
+  */ p {
+    color: #001a18;
   }
 
   .lastlineptext {
@@ -201,4 +204,18 @@
     margin-bottom: 50px;
     border-radius: 30px;
   }
+}
+a {
+  text-decoration: none;
+  box-shadow: none;
+}
+button {
+  text-decoration: none;
+  box-shadow: none;
+  outline: none;
+}
+ton,
+button:focus,
+button:active {
+  outline: none;
 }
