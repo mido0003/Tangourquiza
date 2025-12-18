@@ -31,6 +31,9 @@ h2 {
   .CV {
     line-height: 1.8;
   }
+  .cv-list {
+    line-height: 22px;
+  }
 }
 h1,
 h2,
@@ -197,6 +200,9 @@ a {
     padding-bottom: 60px;
     margin-bottom: 20px;
     font-weight: 450;
+  }
+  .cv-list {
+    line-height: 25px;
   }
   li {
     font-size: 18px;
