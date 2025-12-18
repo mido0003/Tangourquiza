@@ -293,6 +293,10 @@
     height: 434px;
     border-radius: 30px;
   }
+  .aktivitet li {
+    font-family: "Lunasima";
+    font-size: 20px;
+  }
   .tid {
     display: flex;
     flex-direction: column;
@@ -334,9 +338,10 @@
     margin-top: 1rem;
     background: none;
   }
+
   .Pris button a {
     color: #000000;
-    font-size: 20px;
+    font-size: 26px;
   }
   ol {
     font-family: "Lunasima";
