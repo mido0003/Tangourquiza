@@ -39,6 +39,12 @@
 
     font-weight: 250;
   }
+  .aktivitet li {
+    font-family: "Lunasima";
+    display: flow-root list-item;
+
+    font-weight: 250;
+  }
 
   footer ol,
   footer ul {
