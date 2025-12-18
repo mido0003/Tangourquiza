@@ -43,7 +43,7 @@
 
   .tangodansere {
     width: 70px; /* Gør billedet mindre, prøv forskellige værdier */
-    border-radius: none;
+    border-radius: 0;
     margin-left: 350px;
   }
 
@@ -176,7 +176,7 @@
 
   .tangodansere {
     width: 90px; /* Gør billedet mindre, prøv forskellige værdier */
-    border-radius: none;
+    border-radius: 0;
     margin-left: 1100px;
   }
 
