@@ -102,7 +102,7 @@ h2 {
   grid-column: 2;
   justify-self: center;
 }
-button {
+.category-btn {
   grid-row: 3;
   grid-column: 2;
   justify-self: center;
@@ -240,9 +240,9 @@ button {
     grid-column: 1;
     justify-self: center;
   }
-  button {
+  .category-btn {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: 2;
     justify-self: center;
     margin-top: 21rem;
   }
@@ -267,7 +267,10 @@ button {
     width: 23%;
     padding-top: 1rem;
   }
-  .holdover-btn {
-    grid-column: 2;
+  .holdplan {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 19rem;
+    margin-left: 14rem;
   }
 }
