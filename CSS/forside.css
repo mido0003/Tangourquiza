@@ -244,7 +244,7 @@ button {
     grid-row: 1;
     grid-column: 1;
     justify-self: center;
-    margin-top: 19rem;
+    margin-top: 21rem;
   }
   .Teachingclass3 {
     grid-row: 1;
@@ -266,5 +266,8 @@ button {
   .svg-2-forside {
     width: 23%;
     padding-top: 1rem;
+  }
+  .holdover-btn {
+    grid-column: 2;
   }
 }
