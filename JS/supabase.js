@@ -46,7 +46,7 @@ function show(data) {
         <p class="niveau">${hold.niveau}</p>
         <p>${hold.undervisere}</p>
 
-        <button class="read-more">Læs mere</button>
+        <button class="read-more"><u>Læs mere<u></button>
 
         <dialog>
           <h2>TANGO BEGYNDER - TORSDAG 19:00-20:30</h2>

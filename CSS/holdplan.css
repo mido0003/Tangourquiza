@@ -135,6 +135,9 @@
     margin-bottom: 117px;
   }
 }
+.read-more {
+  cursor: pointer;
+}
 @media (min-width: 770px) {
   .oversigt {
     display: grid;
