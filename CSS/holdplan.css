@@ -1,0 +1,297 @@
+@media (max-width: 770px) {
+  .oversigt {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 39px 1fr 39px;
+    margin: 53.5px;
+  }
+  #tilmeld p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h1 {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+  }
+  #tilmeld {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+  }
+  #dkk {
+    padding-left: 2rem;
+  }
+  .sko {
+    width: 150px;
+    height: auto;
+    margin-left: 15px;
+  }
+  .sko2 {
+    margin-left: 130px;
+  }
+  .kun-desktop {
+    display: none;
+  }
+
+  h3,
+  .Trisdag {
+    height: 70px;
+    width: 270px;
+    background-color: #8cb0c3;
+    color: #402f32;
+    text-align: center;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    font-family: "lunasima";
+  }
+  .Onsdag h3,
+  .Torsdag h3 {
+    margin-top: 50px;
+  }
+  .holdover {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin-left: 180px;
+    margin-right: 216px;
+  }
+
+  .niveau- {
+    background: #a88572;
+  }
+
+  /*Torsdag*/
+  /* Begynder */
+  .niveau-tango-begynder {
+    background: #7ea496;
+  }
+  .niveau-let-øvet- {
+    background: #db9191;
+  }
+
+  .niveau-tango-begynder,
+  .niveau-tango-fortsætter,
+  .niveau-øvet,
+  .niveau-,
+  .niveau-let-øvet-eller-øvet {
+    width: 270px;
+    height: 173px;
+    color: #ffffff;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 503;
+    margin-block-start: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* Let øvet */
+  .niveau-tango-fortsætter {
+    background: #db9191;
+  }
+
+  /* Øvet */
+  .niveau-øvet {
+    background: #c77171;
+  }
+  .niveau-let-øvet-eller-øvet {
+    background: #71899c;
+  }
+  button {
+    background-color: transparent;
+  }
+  button,
+  a {
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 503;
+    font-family: "Lunasima";
+    font-size: 16px;
+  }
+
+  .privat {
+    display: flex;
+    justify-content: center;
+  }
+  .privat p {
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+  .klik {
+    color: #402f32;
+    margin-top: 30px;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 117px;
+  }
+}
+.read-more {
+  cursor: pointer;
+}
+@media (min-width: 770px) {
+  .oversigt {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 39px 1fr 39px;
+    margin: 53.5px;
+  }
+  #tilmeld p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h1 {
+    margin-top: 40px;
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+  }
+  #tilmeld {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .sko {
+    width: 271px;
+    height: auto;
+    margin-left: 15px;
+  }
+  .sko2 {
+    margin-left: 374px;
+  }
+  h3 {
+    height: 66px;
+    width: 240px;
+    background-color: rgba(140, 176, 195, 0.38);
+    color: #402f32;
+    text-align: center;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .holdover {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+
+  .Mandag {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .Tirsdag {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .Onsdag {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .Torsdag {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .Fredag {
+    grid-column: 5;
+    grid-row: 1;
+  }
+
+  button {
+    background-color: transparent;
+  }
+  button,
+  a {
+    border: none;
+    outline: none;
+  }
+  .niveau- {
+    background: #a88572;
+  }
+  .niveau-let-øvet-eller-øvet {
+    background: #71899c;
+  }
+
+  /*Torsdag*/
+  /* Begynder */
+  .niveau-tango-begynder {
+    background: #7ea496;
+  }
+  .niveau-let-øvet- {
+    background: #db9191;
+  }
+
+  .niveau-tango-begynder,
+  .niveau-tango-fortsætter,
+  .niveau-øvet,
+  .niveau-,
+  .niveau-let-øvet-eller-øvet {
+    width: 240px;
+    height: 237px;
+    color: #ffffff;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 503;
+    margin-top: 1rem;
+  }
+
+  /* Let øvet */
+  .niveau-tango-fortsætter {
+    background: #db9191;
+  }
+
+  /* Øvet */
+  .niveau-øvet {
+    background: #c77171;
+  }
+
+  button {
+    background-color: transparent;
+  }
+  button a {
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 503;
+    font-family: "Lunasima";
+    font-size: 20px;
+  }
+
+  .privat {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .privat p {
+    margin-right: 10px;
+  }
+  .klik {
+    color: #402f32;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 117px;
+  }
+}

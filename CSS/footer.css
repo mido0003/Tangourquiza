@@ -9,6 +9,10 @@ footer {
   gap: 2rem;
   border-top: 34px solid #4ba9a2;
 }
+.footer-kontakt,
+.kontakt p {
+  color: #fcfaf0;
+}
 
 /* Top block: logo SVG + quote */
 .svg-1 {

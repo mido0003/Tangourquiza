@@ -1,10 +1,34 @@
 @media (max-width: 770px) {
-  /*hero*/
-  .h1line {
-    height: 2px;
-    background-color: #038377;
+  .header {
+    position: relative;
+    z-index: 1000; /* 👈 vigtigt */
   }
-  /**/
+
+  .menu {
+    position: absolute;
+    z-index: 1100; /* 👈 endnu højere */
+  }
+
+  /*hero*/
+  .hero {
+    position: relative;
+    width: 80%;
+    height: 28vh;
+    border: 3px solid #4ba9a2;
+    background-color: #fbf8ef; /* 👈 SAMME som sidens baggrund */
+    overflow: hidden;
+    margin: 1rem auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   /* den grøne line*/
   .line {
@@ -14,19 +38,25 @@
   /*1 grid 1*/
   .h1-tango {
     display: grid;
-    grid-template-rows: 84px 199px 1fr;
+    grid-template-rows: 84px 199px 268px 1fr;
     grid-template-columns: 39px 1fr 39px;
     margin: 53.5px;
+    margin-top: 4rem;
   }
-  h1 {
-    color: #038377;
+  .h1 {
     grid-row: 1/2;
     grid-column: 2;
-    padding-left: 9rem;
+    justify-self: center;
   }
   .p-tango {
     grid-row: 2;
     grid-column: 2;
+  }
+  .forsidesvg-1 {
+    grid-row: 3;
+    grid-column: 2;
+    width: 50%;
+    margin-left: 130px;
   }
 
   /*svg 1*/
@@ -34,65 +64,132 @@
     width: 314%;
     height: 314%;
   }
-  .Teachingclass2 {
-    grid-row: 3;
-    grid-column: 2;
-    justify-self: center;
-  }
 
-  /*1 grid 2*/
-  .h2-tango {
-    display: grid;
-    grid-template-rows: 54px 104px 90px 1fr;
-    grid-template-columns: 39px 1fr 39px;
-    margin: 53.5px;
+  .Teachingclass-img {
+    width: 436px;
+    height: 334px;
+    border-radius: 30px;
   }
-  h2 {
-    color: #038377;
-    grid-row: 1/2;
-    grid-column: 2;
-    padding-left: 9rem;
-  }
-  button {
-    grid-row: 3;
-    grid-column: 2;
-    justify-self: center;
-  }
-  .Teachingclass3 {
-    grid-row: 4;
-    grid-column: 2;
-    justify-self: center;
-  }
-  main {
-    margin-bottom: 100px;
-  }
+}
+.Teachingclass2 {
+  grid-row: 4;
+  grid-column: 2;
+  justify-self: center;
+}
+
+/*1 grid 2*/
+.h2-tango {
+  display: grid;
+  grid-template-rows: 54px 104px 90px 1fr;
+  grid-template-columns: 39px 1fr 39px;
+  margin: 53.5px;
+}
+
+.forsidesvg-2 {
+  width: 197%;
+  height: 91%;
+  margin-left: 60px;
+  margin-bottom: 13rem;
+}
+.holdplan {
+  grid-row: 3;
+  grid-column: 2;
+  justify-self: center;
+}
+
+h2 {
+  grid-row: 1/2;
+  grid-column: 2;
+  justify-self: center;
+}
+.category-btn {
+  grid-row: 3;
+  grid-column: 2;
+  justify-self: center;
+}
+.Teachingclass3 {
+  grid-row: 4;
+  grid-column: 2;
+  justify-self: center;
+}
+
+/*SVG*/
+.svg-1 {
+  width: 50%;
+  grid-row: 3;
+  grid-column: 2;
+  justify-self: center;
+}
+.svg-2-forside {
+  width: 23%;
+  padding-top: 1rem;
 }
 
 @media (min-width: 770px) {
-  .h1line {
-    height: 2px;
-    background-color: #038377;
+  .header {
+    position: relative;
+    z-index: 1000; /* 👈 vigtigt */
   }
+
+  .menu {
+    z-index: 1100; /* 👈 endnu højere */
+  }
+  /*hero*/
+  .hero {
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    border: 8px solid #4ba9a2;
+    overflow: hidden;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+  }
+
+  .hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   /**/
 
-  /* den grøne line*/
+  .svg-noder {
+    width: 150px;
+  }
 
+  /* den grøne line*/
+  .forsidesvg-1 {
+    width: 50%;
+    height: 100%;
+    grid-row: 3;
+    grid-column: 1;
+    margin-left: 11rem;
+  }
   /*1 grid 1*/
   .h1-tango {
     display: grid;
-    grid-template-rows: 84px 199px 1fr;
-    grid-template-columns: 39px 1fr 39px;
+    grid-template-rows: 114px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 53.5px;
   }
-  h1 {
-    color: #038377;
+  .h1 {
     grid-row: 1/2;
-    grid-column: 2;
-    padding-left: 9rem;
+    grid-column: 1;
+    justify-self: center;
   }
   .p-tango {
-    grid-row: 2;
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 11rem;
+  }
+
+  .p-tango-desk {
+    grid-row: 1;
     grid-column: 2;
+    margin-top: 12rem;
+    margin-left: 4rem;
   }
 
   /*svg 1*/
@@ -100,8 +197,14 @@
     width: 314%;
     height: 314%;
   }
+  .Teachingclass-img {
+    width: 636px;
+    height: 534px;
+    border-radius: 30px;
+  }
+
   .Teachingclass2 {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 2;
     justify-self: center;
   }
@@ -109,27 +212,65 @@
   /*1 grid 2*/
   .h2-tango {
     display: grid;
-    grid-template-rows: 54px 104px 90px 1fr;
-    grid-template-columns: 39px 1fr 39px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 53.5px;
   }
-  h2 {
-    color: #038377;
-    grid-row: 1/2;
-    grid-column: 2;
-    padding-left: 9rem;
+  .h2-svg {
+    grid-row: 1;
+    grid-column: 1;
+    padding-top: 2rem;
   }
-  button {
-    grid-row: 3;
+  .forsidesvg-2 {
+    width: 30%;
+    height: 170%;
+    margin-left: 180px;
+    grid-row: 1;
+    display: inline;
+  }
+
+  h2 {
+    grid-row: 1;
     grid-column: 2;
     justify-self: center;
+    margin-top: 3rem;
+  }
+  .h2-desk {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+  }
+  .category-btn {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    margin-top: 21rem;
   }
   .Teachingclass3 {
-    grid-row: 4;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .Teachingclass1 {
+    grid-row: 1;
     grid-column: 2;
+  }
+
+  /*SVG*/
+  .svg-1 {
+    width: 50%;
+    grid-row: 4;
+    grid-column: 1;
     justify-self: center;
   }
-  main {
-    margin-bottom: 100px;
+  .svg-2-forside {
+    width: 23%;
+    padding-top: 1rem;
+  }
+  .holdplan {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 19rem;
+    margin-left: 14rem;
   }
 }
